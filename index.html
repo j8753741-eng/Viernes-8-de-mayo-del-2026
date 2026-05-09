@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta de Amor - Viernes 8 de Mayo</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      background: radial-gradient(circle at top, #120018, #050007);
+      font-family: "Georgia", serif;
+      color:#f3e9ff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+
+    .carta{
+      width:90%;
+      max-width:850px;
+      background: linear-gradient(145deg, rgba(120,0,200,0.18), rgba(0,0,0,0.75));
+      border: 2px solid rgba(190,120,255,0.35);
+      border-radius: 22px;
+      padding: 55px 55px;
+      box-shadow: 0 0 35px rgba(180, 70, 255, 0.25);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .carta::before{
+      content:"";
+      position:absolute;
+      top:-80px;
+      right:-80px;
+      width:250px;
+      height:250px;
+      background: radial-gradient(circle, rgba(210,120,255,0.35), transparent 70%);
+      filter: blur(10px);
+    }
+
+    .carta::after{
+      content:"";
+      position:absolute;
+      bottom:-100px;
+      left:-100px;
+      width:280px;
+      height:280px;
+      background: radial-gradient(circle, rgba(140,0,255,0.35), transparent 70%);
+      filter: blur(10px);
+    }
+
+    .fecha{
+      text-align:center;
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(220,190,255,0.85);
+      margin-bottom: 35px;
+    }
+
+    .titulo{
+      text-align:center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #f8d7ff;
+      text-shadow: 0 0 8px rgba(200,120,255,0.35);
+    }
+
+    .subtitulo{
+      text-align:center;
+      font-size: 14px;
+      color: rgba(230,210,255,0.75);
+      margin-bottom: 40px;
+    }
+
+    .contenido{
+      font-size: 18px;
+      line-height: 1.9;
+      color: rgba(250,240,255,0.95);
+      position:relative;
+      z-index:2;
+    }
+
+    .contenido p{
+      margin-bottom: 18px;
+    }
+
+    .contenido strong{
+      color:#ffffff;
+      text-shadow: 0 0 10px rgba(220,170,255,0.55);
+    }
+
+    .firma{
+      margin-top: 40px;
+      text-align: right;
+      font-size: 18px;
+      color: rgba(240,220,255,0.95);
+      z-index:2;
+      position:relative;
+    }
+
+    .firma span{
+      display:block;
+      margin-top: 6px;
+      font-size: 16px;
+      color: rgba(210,170,255,0.9);
+    }
+
+    .autor{
+      margin-top: 18px;
+      text-align:right;
+      font-size: 16px;
+      font-weight: bold;
+      color: #e7c6ff;
+      text-shadow: 0 0 10px rgba(190,100,255,0.45);
+    }
+
+    .neon-frase{
+      margin-top: 55px;
+      text-align:center;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #d28cff;
+      text-shadow:
+        0 0 6px rgba(190, 80, 255, 0.9),
+        0 0 12px rgba(170, 0, 255, 0.85),
+        0 0 18px rgba(140, 0, 255, 0.75),
+        0 0 25px rgba(90, 0, 255, 0.65);
+      padding: 18px 22px;
+      border-radius: 18px;
+      border: 1px solid rgba(200,120,255,0.35);
+      background: rgba(30, 0, 50, 0.45);
+      position:relative;
+      z-index:2;
+    }
+
+    .decoracion{
+      width:100%;
+      height:2px;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, rgba(220,150,255,0.8), transparent);
+      border-radius: 10px;
+      z-index:2;
+      position:relative;
+    }
+
+    .sello{
+      position:absolute;
+      top: 25px;
+      left: 25px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(230,170,255,0.8), rgba(120,0,200,0.25));
+      box-shadow: 0 0 18px rgba(190, 70, 255, 0.55);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size: 22px;
+      color:#fff;
+      z-index:3;
+    }
+
+    @media(max-width:600px){
+      .carta{
+        padding: 35px 25px;
+      }
+      .titulo{
+        font-size: 25px;
+      }
+      .contenido{
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <div class="sello">💜</div>
+
+    <div class="fecha"><strong>Viernes, 8 de mayo de 2026 — Noche</strong></div>
+
+    <div class="titulo">Mi Carta para Ti</div>
+    <div class="subtitulo">Una noche donde mi corazón solo sabe pronunciar tu nombre</div>
+
+    <div class="decoracion"></div>
+
+    <div class="contenido">
+      <p><strong>Mi amor,</strong></p>
+
+      <p>
+        Esta noche no puedo dejar de pensarte… y siento que el corazón se me aprieta un poquito, porque hoy el día se sintió incompleto sin ti.
+        Desde temprano me quedé con esa sensación de que algo faltaba, y sí… eras tú. Tu presencia, tu voz, tu manera de existir en mi mundo.
+      </p>
+
+      <p>
+        Me dolió saber que te sentías mal, porque cuando tú estás mal, mi alma lo siente también.
+        Yo habría querido estar ahí contigo, cuidarte, abrazarte despacio, hacerte sentir tranquila… como si mi pecho fuera un lugar seguro donde pudieras descansar.
+        Porque tú no mereces sentirte débil ni triste ni cansada… tú mereces sentirte amada, protegida y acompañada.
+      </p>
+
+      <p>
+        Hoy te extrañé demasiado… pero no “te extrañé normal”, te extrañé de esa manera intensa en la que el tiempo se vuelve lento,
+        en la que todo me recuerda a ti, en la que hasta el silencio me habla de lo mucho que te necesito.
+        Me hizo falta mirarte, hacerte reír, sentir que estabas bien… porque cuando tú estás bien, mi mundo también lo está.
+      </p>
+
+      <p>
+        Y aunque no estuviste en clases, en mi mente estuviste todo el día.
+        Te juro que en cada momento imaginaba tu carita, tu mirada, tu forma de hablar…
+        y me daban ganas de ir corriendo a ti solo para decirte:
+        <strong>“amor, estoy aquí, no estás sola.”</strong>
+      </p>
+
+      <p>
+        Esta noche quiero que lo recuerdes bien… tú eres una de las cosas más hermosas que me han pasado en la vida.
+        Yo te amo con una fuerza que no se puede explicar fácil, con una pasión que me nace del alma.
+        Te amo de una manera que no se apaga con los días, al contrario… crece. Se vuelve más profunda, más seria, más real.
+      </p>
+
+      <p>
+        Y si hoy te sentías mal, quiero que sepas que yo estoy contigo, incluso en la distancia.
+        Que si tu cuerpo está cansado, mi amor quiere ser descanso.
+        Que si tu mente se siente pesada, mi amor quiere ser calma.
+        Que si tu corazón se siente triste, el mío está dispuesto a abrazarlo hasta que vuelva a latir bonito.
+      </p>
+
+      <p>
+        Porque tú, mi vida… tú eres mi debilidad más preciosa.
+        Y yo no quiero amarte a medias, yo quiero amarte completamente, intensamente, con todo lo que soy.
+      </p>
+
+      <p>
+        Descansa, mi amor. Ponte mejor.
+        Y cuando cierres los ojos esta noche, piensa en esto:<br>
+        <strong>hay alguien que te ama tanto… que hoy el mundo se sintió vacío sin ti.</strong>
+      </p>
+
+      <p>
+        Te extraño demasiado… y te amo todavía más.
+      </p>
+    </div>
+
+    <div class="decoracion"></div>
+
+    <div class="firma">
+      <strong>Con todo mi corazón,</strong><br>
+      tu niño que no deja de pensarte. 💗✨
+      <span class="autor">JUAN KALETH MENDOZA PRIMERA 💜</span>
+    </div>
+
+    <div class="neon-frase">
+  No existe distancia, cansancio ni noche oscura que pueda apagar lo que siento por ti… porque mi amor por ti no es un simple sentimiento,
+  es un fuego eterno que vive dentro de mí y que se enciende más fuerte cada vez que pienso en tu sonrisa, en tu voz, en tu mirada y en todo
+  lo que eres. Hoy más que nunca quiero que lo recuerdes: yo estaría dispuesto a darte mi calma cuando estés cansada, mi fuerza cuando te sientas
+  débil, y mi corazón entero cuando necesites sentirte amada… porque tú eres mi vida, mi sueño más bonito, mi debilidad más sagrada y el amor
+  más verdadero que he tenido en esta vida. Y si algún día el mundo se vuelve frío, yo quiero ser el lugar donde tu alma siempre encuentre calor,
+  refugio y amor infinito… <strong>VALERIA PETRO VILLAZÓN</strong>.
+    </div>
+
+  </div>
+
+</body>
+</html>
